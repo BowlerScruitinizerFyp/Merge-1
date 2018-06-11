@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="upload.firbase.com.firebaseuploadexample.DrawerActivity"
+    tools:showIn="@layout/app_bar_drawer">
+
+
+    <Button
+        android:id="@+id/Camera_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="78dp"
+        android:background="@drawable/circle"
+        android:drawableTop="@drawable/ic_camera_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="View_Camera"
+        android:text="Camera"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Galery_View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/Galery_View"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/circle"
+        android:drawableTop="@drawable/ic_gallery_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="View_gallery"
+        android:text="Gallery"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Result_View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Camera_view" />
+
+    <Button
+        android:id="@+id/Result_View"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="118dp"
+        android:background="@drawable/circle"
+        android:drawableTop="@drawable/ic_result_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="View_Results"
+        android:text="Results"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Galery_View" />
+
+
+</android.support.constraint.ConstraintLayout>
